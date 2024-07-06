@@ -1,0 +1,9 @@
+.productList {
+  border: 2px solid black;
+  margin: 2rem 0;
+}
+.product {
+  margin: 2rem 0;
+  display: flex;
+  gap: 0.5rem;
+}
