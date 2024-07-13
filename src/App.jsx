@@ -1,10 +1,25 @@
+import { useEffect, useState } from "react";
 import "./App.css";
-import Todos from "./components/Todos";
+import Todos from "./components/TodosBeta";
 
 function App() {
+  const [userInput, setUserInput] = useState(1);
+
+  console.log("running");
+
+  useEffect(() => {
+    console.log("running useEffect");
+  });
+
   return (
     <div>
-      <Todos />
+      <input
+        type="number"
+        placeholder="Enter the id of Todo"
+        onChange={(event) => {
+          setUserInput(event.target.value);
+        }}
+      />
     </div>
   );
 }

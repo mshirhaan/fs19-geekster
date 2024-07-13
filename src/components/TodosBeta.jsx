@@ -5,18 +5,14 @@ function Todos() {
 
   const [userInput, setUserInput] = useState(1);
 
-  console.log("userinput", userInput);
-
   useEffect(() => {
-    //only first time
+    //only after component finishes runs for first time
+    fetch(`https://jsonplaceholder.typicode.com/todos/${userInput}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setTodo(data);
+      });
   }, [userInput]);
-
-  async function getTodo() {
-    const res = await fetch(
-      `https://jsonplaceholder.typicode.com/todos/${userInput}`
-    );
-    setTodo(await res.json());
-  }
 
   if (todo == null) {
     return <p>Nothing here.</p>;
