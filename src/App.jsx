@@ -1,7 +1,12 @@
 import "./App.css";
+import Timer from "./components/Timer";
 
 function App() {
-  return <div>Hello Geekster</div>;
+  return (
+    <div>
+      <Timer />
+    </div>
+  );
 }
 
 export default App;
