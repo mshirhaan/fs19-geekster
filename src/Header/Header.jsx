@@ -1,11 +1,11 @@
 import React from "react";
 import Navbar from "./Navbar/Navbar";
 
-function Header({ setCartCount, cartCount }) {
+function Header() {
   return (
     <div>
       <p>Header</p>
-      <Navbar setCartCount={setCartCount} cartCount={cartCount} />
+      <Navbar />
     </div>
   );
 }

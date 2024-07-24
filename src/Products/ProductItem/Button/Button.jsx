@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { CartContext } from "../../../context/CartContext";
 
-function Button({ setCartCount, cartCount }) {
+function Button() {
+  const { cartCount, setCartCount } = useContext(CartContext);
   return (
     <div>
       <p>Button</p>

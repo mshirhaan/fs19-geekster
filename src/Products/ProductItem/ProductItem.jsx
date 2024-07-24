@@ -1,11 +1,11 @@
 import React from "react";
 import Button from "./Button/Button";
 
-function ProductItem({ setCartCount, cartCount }) {
+function ProductItem() {
   return (
     <div>
       <p>ProductItem</p>
-      <Button setCartCount={setCartCount} cartCount={cartCount} />
+      <Button  />
     </div>
   );
 }

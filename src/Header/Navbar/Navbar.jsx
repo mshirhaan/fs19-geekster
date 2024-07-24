@@ -1,11 +1,11 @@
 import React from "react";
 import NavItems from "./NavItems/NavItems";
 
-function Navbar({ setCartCount, cartCount }) {
+function Navbar() {
   return (
     <div>
       <p>Navbar</p>
-      <NavItems setCartCount={setCartCount} cartCount={cartCount} />
+      <NavItems />
     </div>
   );
 }

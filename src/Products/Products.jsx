@@ -1,11 +1,11 @@
 import React from "react";
 import ProductItem from "./ProductItem/ProductItem";
 
-function Products({ setCartCount, cartCount }) {
+function Products() {
   return (
     <div>
       <p>Products</p>
-      <ProductItem setCartCount={setCartCount} cartCount={cartCount} />
+      <ProductItem  />
     </div>
   );
 }
