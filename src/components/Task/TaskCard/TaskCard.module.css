@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  background-color: white;
+  width: 80%;
+  margin-top: 1rem;
+  border-radius: 5px;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+}
+
+.actionBtn {
+  border: none;
+  background: none;
+}
+
+.actions {
+  right: 0;
+  position: absolute;
+}
+.actionBtn:hover {
+  cursor: pointer;
+  color: red;
+}
