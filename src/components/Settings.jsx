@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import AuthContext from "../AuthContext";
 
-function NewsFeed() {
-  return <div>NewsFeed</div>;
+function Settings() {
+  return <div>Settings</div>;
 }
 
-export default NewsFeed;
+export default Settings;

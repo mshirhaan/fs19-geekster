@@ -8,6 +8,8 @@ import Signup from "./components/Signup";
 import Login from "./components/Login";
 import NewsFeed from "./components/NewsFeed";
 import { AuthProvider } from "./AuthContext";
+import Settings from "./components/Settings";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   console.log(auth);
@@ -42,7 +44,22 @@ function App() {
             <Route path="/register" element={<Signup />} />
             <Route path="/login" element={<Login />} />
 
-            <Route path="/newsfeed" element={<NewsFeed />} />
+            <Route
+              path="/newsfeed"
+              element={
+                <ProtectedRoute>
+                  <NewsFeed />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/settings"
+              element={
+                <ProtectedRoute>
+                  <Settings />
+                </ProtectedRoute>
+              }
+            />
           </Routes>
         </BrowserRouter>
       </AuthProvider>
